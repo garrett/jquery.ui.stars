@@ -1,5 +1,5 @@
 /*
- * jQuery UI Stars v1.0.2
+ * jQuery UI Stars v1.1
  *
  * Copyright (c) 2008 Orkan (orkans@gmail.com)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
@@ -56,7 +56,7 @@
       });
       
       this.$cancel = $("<div/>").addClass(o.cancelClass).append( $("<a/>").attr("title", o.showTitles ? o.cancelTitle : "").text(o.cancelValue) );
-      this.$value = $('<input type="hidden" name="'+o.name+'" />');
+      this.$value = $('<input type="hidden" name="'+o.name+'" value="'+o.value+'" />');
 
       o.cancelShow &= !o.disabled && !o.oneVoteOnly;
 
@@ -86,7 +86,7 @@
       $(window).bind("unload", function(){
         self.$cancel.unbind(".stars");
         self.$stars.unbind(".stars");
-        self.$selec = self.$rboxs = this.$stars = this.$value = this.$cancel = null;
+        self.$selec = self.$rboxs = self.$stars = self.$value = self.$cancel = null;
       });
 
       // Remove selection
