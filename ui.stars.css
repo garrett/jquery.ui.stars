@@ -1,0 +1,57 @@
+/* Stars */
+.ui-stars-cancel,
+.ui-stars-star {
+	float:left;
+	width:17px;
+	height:15px;
+	text-indent:-999em;
+	cursor:pointer;
+	display:block;
+	background:transparent;
+	overflow:hidden
+}
+.ui-stars-cancel,
+.ui-stars-cancel a {
+	background:url(delete.gif) no-repeat 0 -16px
+}
+.ui-stars-star,
+.ui-stars-star a {
+	background:url(star.gif) no-repeat 0 0px
+}
+.ui-stars-cancel a,
+.ui-stars-star a {
+	display:block;
+	width:16px;
+	height:100%;
+	background-position:0 0px
+}
+.ui-stars-star-on a {
+	background-position:0 -16px!important
+}
+.ui-stars-star-hover a {
+	background-position:0 -32px
+}
+.ui-stars-cancel-hover a {
+	background-position:0 -16px
+}
+.ui-stars-cancel-disabled a,
+.ui-stars-star-disabled,
+.ui-stars-star-disabled a {
+	cursor:default !important
+}
+.ui-stars-star {
+	background:transparent!important;
+	overflow:hidden!important
+}
+
+/* Stars compressed
+.ui-stars-cancel,.ui-stars-star {float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+.ui-stars-cancel,.ui-stars-cancel a {background:url(delete.gif) no-repeat 0 -16px}
+.ui-stars-star,.ui-stars-star a {background:url(star.gif) no-repeat 0 0px}
+.ui-stars-cancel a,.ui-stars-star a {display:block;width:16px;height:100%;background-position:0 0px}
+.ui-stars-star-on a {background-position:0 -16px!important}
+.ui-stars-star-hover a {background-position:0 -32px}
+.ui-stars-cancel-hover a {background-position:0 -16px}
+.ui-stars-cancel-disabled a,.ui-stars-star-disabled,.ui-stars-star-disabled a {cursor:default !important}
+.ui-stars-star {background:transparent!important;overflow:hidden!important}
+*/
