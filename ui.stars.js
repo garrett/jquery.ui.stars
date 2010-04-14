@@ -18,7 +18,7 @@
 
 $.widget("ui.stars",
 {
-  _init: function() {
+  _create: function() {
     var self = this, o = this.options, id = 0;
 
     o.isSelect = o.inputType == "select";
@@ -277,10 +277,9 @@ $.widget("ui.stars",
   }
 });
 
-$.extend($.ui.stars, {
+$.extend($.ui.stars.prototype, {
   version: "2.1.1",
-  getter: "value",
-  defaults: {
+  options: {
     inputType: "radio", // radio|select
     split: 0,
     disabled: false,
